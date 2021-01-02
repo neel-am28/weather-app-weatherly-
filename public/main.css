@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+h1 {
+  position: absolute;
+  top: 10px;
+  font-size: 3rem;
+  color: gray;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+p {
+  position: absolute;
+  top: 80px;
+  color: gray;
+}
+.search-city-container {
+  width: 300px;
+  top: 140px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-left: -40px;
+}
+#search-city {
+  width: 100%;
+  outline: 0;
+  padding: 0.6rem;
+  background: #525e65;
+  margin: 2rem 2.7rem;
+  color: #ffffff;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: 0;
+  transition: 500ms all ease;
+}
+#search-city:focus {
+  box-shadow: 0px 0px 15px 0px rgba(213, 213, 213, 0.45);
+}
+.container {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  height: 500px;
+  width: 300px;
+  top: 440px;
+  left: 50%;
+  position: absolute;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+.container-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(78, 173, 251, 0.2) 0%,
+    #212120 80%,
+    #212120 100%
+  );
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.city-country {
+  color: white;
+  z-index: 99;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.calender {
+  color: white;
+  z-index: 99;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.weather-container {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  background: #62889d;
+}
+.icon,
+.time,
+.temp {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.time {
+  color: white;
+  top: 73%;
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+.temp {
+  color: white;
+  top: 78%;
+  font-weight: 300;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+.icon {
+  top: 90%;
+}
+.img-move {
+  animation: move 2s infinite alternate linear;
+}
+@keyframes move {
+  0% {
+    transform: translate(-1rem);
+  }
+  100% {
+    transform: translate(1rem);
+  }
+}
+input::placeholder {
+  color: white;
+}
+.hide {
+  display: none;
+}

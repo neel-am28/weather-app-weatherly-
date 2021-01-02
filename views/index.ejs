@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body id="important">
+    <h1 class="head">Weatherly</h1>
+    <p class="msg">Enter a location to get weather information</p>
+    <div class="search-city-container">
+        <input type="text" name="search-city" id="search-city" class="search-city" placeholder="Search city">
+    </div>
+    <div class="container hide">
+        <!-- background -->
+        <img src="../images/day.jpg" alt="day-image" class="container-image">
+        <!-- overlay -->
+        <div class="container-overlay"></div>
+        <h2 class="city-country">Mumbai, IN</h2>
+        <h3 class="calender">Saturday, January 02, 2021</h3>
+        <div class="icon"><img class="img-move" src="http://openweathermap.org/img/wn/50d@2x.png" alt=""></div>
+        <h3 class="time">04:20 p.m</h3>
+        <h3 class="temp">28 &deg; Cloudy</h3>
+    </div>
+    <!-- container end -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"
+        integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ=="
+        crossorigin="anonymous"></script>
+    <script src="./browser.js"></script>
+
+</body>
+
+</html>
